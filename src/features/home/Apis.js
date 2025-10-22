@@ -1,5 +1,5 @@
 import axios from 'axios'
-const domain = process.env.REACT_APP_API_URL
+const domain = process.env.REACT_APP_API_URL || 'https://fitomanager.pythonanywhere.com/api'
 
 export const getPlantasHome = async() => {return await axios.get(`${domain}/plantas/plantasHome`)}
 

@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const domain = process.env.REACT_APP_API_URL
+// Fallback to a safe default so builds don't fail when REACT_APP_API_URL is not set
+const domain = process.env.REACT_APP_API_URL || 'https://fitomanager.pythonanywhere.com/api'
 
 export const getPatologias = async (search="", url=`${domain}/indicaciones/indicaciones/?search=${search}`) => {
     return axios.get(url);
