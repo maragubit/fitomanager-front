@@ -1,10 +1,10 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Card, Carousel, Col, Row } from "react-bootstrap";
 import { getPatologiasHome } from "./Apis";
 import Cargando from "../../components/Cargando";
 import _ from "lodash";
 import { Link } from "react-router-dom";
-import Separador from "../../components/Separador";
+
 
 function PatologiasHome() {
     const [patologia, setPatologia] = useState([]);

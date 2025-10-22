@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
-import { Button, Card, Carousel, Col, Container, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { getProductosHome } from "./Apis";
 import Cargando from "../../components/Cargando";
 import { Link } from "react-router-dom";

@@ -1,4 +1,4 @@
-import { useState,useEffect, use } from "react";
+import { useState,useEffect} from "react";
 import { getPlantasTotal } from "../plantas/Apis";
 import Cargando from "../../components/Cargando";
 import { Form } from "react-bootstrap";

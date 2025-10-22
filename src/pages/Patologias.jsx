@@ -1,9 +1,8 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 import { getDepartamentos, getPatologias } from "../features/patologias/Apis";
 import { Card, Col, FormControl, Row } from "react-bootstrap";
 import Cargando from "../components/Cargando";
-import { set } from "lodash";
 import Subnavegador from "../features/patologias/Subnavegador";
 import { Link } from "react-router-dom";
 

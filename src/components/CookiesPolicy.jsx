@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 
 function CookiesPolicy() {
     const app="Fitomanager"
