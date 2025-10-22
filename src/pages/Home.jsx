@@ -31,7 +31,7 @@ function Home() {
         <img src={slide3} className="carousel-image" width="100%" alt="Third slide" />
         <Carousel.Caption>
           <h3>Productos</h3>
-           <p style={{fontWeight: "bold"}}>Descubre nuestra gama de productos recomendados</p>
+           <p style={{fontWeight: "bold"}}>Descubre nuestra gama de productos naturales recomendados</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
