@@ -70,7 +70,7 @@ function PatologiasHome() {
         
         <Col xs={12} lg={6} className="text-center justify-content-center patologia-home">
         <Row>
-            <Col lg={12}><h4 className="d-block text-center mb-4">Herbolario para {patologia.nombre}</h4></Col>
+            <Col lg={12}><h4 className="d-block text-center mb-4 mt-4">Herbolario para {patologia.nombre}</h4></Col>
             </Row>
             <Row className="align-items-stretch g-3" style={{maxHeight: '750px', overflowY: 'auto'}}>
             {patologia.productos.map((producto) => (

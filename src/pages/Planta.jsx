@@ -25,10 +25,11 @@ function Planta() {
         <div> 
         <PlantaCard planta={planta} load={load} />
         <Subnavegador /> 
-        <Container>
+        <Container className="mt-5 mb-5">
             <Outlet context={{ planta }} />
         </Container>
         <Separador />
+        <div style={{height: "100px"}}></div>
         <Container>
             <h5 className="text-center"> <img className="me-2" src="/logo.png" alt="logo" width="30" /><span>Productos fitomanager con {planta?.nombre} </span></h5>
             <p className="manuscrito">Próximamente...</p>
