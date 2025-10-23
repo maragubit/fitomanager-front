@@ -32,21 +32,20 @@ function Promociones() {
             <Row className="g-3">
                 {loading ? <Cargando/> : promociones.map((producto, index) => (
                 <Col xs={6} lg={3}>
-                <Link to={`/herbolario/${producto.id}`}>
+                
                 <Card>
-                    <div>
-                        <div className="descuento" style={{display:"none"}}>20% OFF </div>
-                        <Card.Img className="mt-3" style={{ height: '150px', objectFit: 'cover', width: '100px' }} variant="top" src={producto.foto} alt="producto"/>
-                    </div>
+                    <Link to={`/herbolario/${producto.id}`}><Card.Img className="mt-3" style={{ height: '150px', objectFit: 'cover', width: '100px' }} variant="top" src={producto.foto} alt="producto"/>
                     <Card.Body>
                         <Card.Text style={{ height: '50px', overflow: 'hidden' }}>{producto.nombre}</Card.Text>
-                        <Card.Footer className="hidden">
-                            <div className="d-flex justify-content-between"><h6 className="d-inline antes">{producto.pvp}€</h6> <h6 style={{display:"none"}} className="d-inline text-center justify-content-center mx-auto">{(producto.pvp - (producto.pvp * 0.2)).toFixed(2)}€</h6></div>
-                        </Card.Footer>
-                        <Button  className=" comprar w-100 hidden"><Icon icon="typcn:shopping-cart" /> Comprar</Button>
                     </Card.Body>
+                    </Link>
+                             <Card.Footer>
+                            <h4 className="d-inline text-center justify-content-center mx-auto">{(producto.pvp)}€</h4>
+                            <Link to={producto.link}><Button  className=" comprar w-100 mb-3 mt-3"><Icon icon="typcn:shopping-cart" /> Comprar</Button></Link>
+                        </Card.Footer>
+                    
                 </Card>
-                </Link>
+                
                 </Col>
             ))}</Row>
         

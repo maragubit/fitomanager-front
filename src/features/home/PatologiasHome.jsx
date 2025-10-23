@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { Card, Carousel, Col, Row } from "react-bootstrap";
+import { Button, Card, Carousel, Col, Row } from "react-bootstrap";
 import { getPatologiasHome } from "./Apis";
 import Cargando from "../../components/Cargando";
 import _ from "lodash";
 import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
 
 function PatologiasHome() {
@@ -76,12 +77,16 @@ function PatologiasHome() {
             {patologia.productos.map((producto) => (
            
                 <Col xs={6} lg={4} key={producto.id} className="mb-4">
-                    <Link to={`/herbolario/${producto.id}`}><Card className="boxShadow" style={{ height: '100%' }}>
-                        <Card.Img className="mt-2" variant="top" src={producto.foto} alt={producto.nombre} style={{ objectFit: 'cover', height: '100px' }} />
+                    <Card className="boxShadow" style={{ height: '100%' }}>
+                        <Link to={`/herbolario/${producto.id}`}><Card.Img className="mt-2" variant="top" src={producto.foto} alt={producto.nombre} style={{ objectFit: 'cover', height: '100px' }} />
                         <Card.Body>
                             <Card.Text style={{ height: '50px', overflow: 'hidden' }}>{producto.nombre}</Card.Text>
-                        </Card.Body>
-                    </Card></Link>
+                        </Card.Body></Link>
+                        <Card.Footer>
+                            <h4 className="d-inline text-center justify-content-center mx-auto">{(producto.pvp)}€</h4>
+                            <Link to={producto.link}><Button  className=" comprar w-100 mb-3 mt-3"><Icon icon="typcn:shopping-cart" /> Comprar</Button></Link>
+                        </Card.Footer>
+                    </Card>
                 </Col>
             ))}
             </Row>
