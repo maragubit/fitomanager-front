@@ -25,7 +25,7 @@ function Navegador() {
               Home
             </Nav.Link>
             <Nav.Link as={NavLink} to="/plantas">Plantas medicinales</Nav.Link>
-            <Nav.Link as={NavLink} to="/patologias">Patologías</Nav.Link>
+            <Nav.Link as={NavLink} to="/patologias">Fitoterapia</Nav.Link>
             <Nav.Link as={NavLink} to="/herbolario">Herbolario</Nav.Link>
             <Nav.Link as={NavLink} to="/blog">Blog</Nav.Link>
             <Nav.Link href="/">acerca de</Nav.Link>

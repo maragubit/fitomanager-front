@@ -42,8 +42,8 @@ function Patologias() {
     },[departamentoId]);
 
     return (<>
-        <h1 className="text-center manuscrito m-3">Patologías</h1>
-        <p className="text-center mb-5 text-black">consulta cómo puedes tratar las diferentes patologias de forma natural</p>
+        <h1 className="text-center manuscrito m-3">Fitoterapia</h1>
+        <p className="text-center mb-5 text-black">consulta cómo puedes tratar las diferentes patologias empleando plantas medicinales</p>
         <FormControl
             style={{ maxWidth: "600px", margin: "0 auto" }}
             type="text"

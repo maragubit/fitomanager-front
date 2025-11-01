@@ -16,21 +16,21 @@ function Home() {
       <Carousel.Item interval={7000}>
         <img width="100%" className="carousel-image" src={slide1} alt="First slide" />
         <Carousel.Caption>
-          <h3>Plantas medicinales</h3>
+          <h1>Plantas medicinales</h1>
           <p style={{fontWeight: "bold"}}>Emplea nuestra guia de plantas medicinales</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
         <img src={slide2} className="carousel-image" width="100%"  alt="Second slide" />
         <Carousel.Caption>
-          <h3>Patologías</h3>
+          <h1>Fitoterapia</h1>
           <p style={{fontWeight: "bold"}}>Consulta los mejores tratamientos para sanar tus dolencias</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
         <img src={slide3} className="carousel-image" width="100%" alt="Third slide" />
         <Carousel.Caption>
-          <h3>Productos</h3>
+          <h1>Productos naturales</h1>
            <p style={{fontWeight: "bold"}}>Descubre nuestra gama de productos naturales recomendados</p>
         </Carousel.Caption>
       </Carousel.Item>
