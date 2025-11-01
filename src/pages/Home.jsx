@@ -39,7 +39,7 @@ function Home() {
     <h6>
       Si te apasiona lo natural y confías en el poder de las <em>plantas medicinales</em>, 
       si te pierdes entre la gran oferta de <em>productos naturales</em>, 
-      o careces de la información necesaria para usarlos correctamente, <em>Fitomanager</em> es para ti.
+      o careces de la información necesaria para usarlos correctamente, <em>Fitomanager</em> es para tí.
       Orientamos sobre el uso adecuado de las plantas medicinales para mejorar tu bienestar y evaluamos productos naturales.
     </h6>
     </div>
