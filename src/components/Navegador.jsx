@@ -21,13 +21,13 @@ function Navegador() {
         
         <Navbar.Collapse id="navbarResponsive">
           <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/" end>
+            <Nav.Link as={NavLink} to="/" end onClick={() => setExpanded(false)}>
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/plantas">Plantas medicinales</Nav.Link>
-            <Nav.Link as={NavLink} to="/patologias">Fitoterapia</Nav.Link>
-            <Nav.Link as={NavLink} to="/herbolario">Herbolario</Nav.Link>
-            <Nav.Link as={NavLink} to="/blog">Blog</Nav.Link>
+            <Nav.Link as={NavLink} to="/plantas" onClick={() => setExpanded(false)}>Plantas medicinales</Nav.Link>
+            <Nav.Link as={NavLink} to="/patologias" onClick={() => setExpanded(false)}>Fitoterapia</Nav.Link>
+            <Nav.Link as={NavLink} to="/herbolario" onClick={() => setExpanded(false)}>Herbolario</Nav.Link>
+            <Nav.Link as={NavLink} to="/blog" onClick={() => setExpanded(false)}>Blog</Nav.Link>
             <Nav.Link href="/">acerca de</Nav.Link>
           </Nav>
         </Navbar.Collapse>
